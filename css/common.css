@@ -8,9 +8,10 @@ body {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fafafa;
+  /* background-color: #fafafa; */
   color: #212121;
   line-height: 1.5;
+  background: linear-gradient(to right, #1e3d4b, #612017);
 }
 
 input {
@@ -21,4 +22,42 @@ input {
 button {
   padding: 8px 12px;
   cursor: pointer;
+}
+
+
+
+/*  */
+ul {
+  list-style: none;
+}
+
+
+.btn {
+  padding-left: 48%;
+}
+
+.list {
+  padding-left: 40%;
+  padding-top: 1%;
+  display: flex;
+  gap: 15px;
+}
+
+
+button {
+  color: azure;
+  background: #20556d;
+  font-weight: 700;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s, box-shadow 0.5s, color 0.5s, background-color 0.7s;
+}
+
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+  background-color: beige;
+  color: #1e3d4b;
 }
