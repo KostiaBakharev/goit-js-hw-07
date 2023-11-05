@@ -51,6 +51,11 @@ function handleClick(event) {
   );
   instance.show();
 
+  const modalImg = instance.element().querySelector("img");
+  modalImg.addEventListener("click", () => {
+    instance.close();
+  });
+
   function onKeyPress(event) {
     if (event.key === "Escape") {
       instance.close();
